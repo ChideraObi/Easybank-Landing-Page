@@ -1,4 +1,6 @@
 .hero {
+background-color: $veryLightGrey;
+
     @include breakpoint-up(large){
         display:flex;
         align-items: center;
@@ -40,12 +42,13 @@
 
         @include breakpoint-up(large){
             flex:2;
+            order:1;
             text-align: left;
         }
 
         h1 {
             font-weight: 300;
-            font-size: 2.3125rem;
+            font-size: $font-xlg;
             line-height: 1;
             color: $darkBlue;
             margin-bottom: 1.5rem;
